@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="cadastro.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Kit -->
+    <script src="https://kit.fontawesome.com/0c22e232c6.js" crossorigin="anonymous"></script>
+    <title>Cadastro</title>
+
+  </head>
+  <body>
+    <header>
+      <ul class="nav d-flex">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item d-flex">
+            <a class="nav-link" href="receitas.html">Receitas</a>
+          </li>
+          <li class="nav-item d-flex">
+            <a class="nav-link disabled" href="#">Cadastro</a>
+          </li>
+      </ul>
+    </header>
+    <div class="container">
+        <h1>Efetue seu cadastro</h1>
+    </div>
+    <div class="container main">
+        <form action="https://formspree.io/f/moqodqkv" method="POST">
+            <div class="form-group row">
+          <label class="col-2 col-form-label">Nome</label>
+          <div class="col-8">
+            <input class="form-control" type="text" name="nome" required>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label class="col-2 col-form-label">E-mail</label>
+          <div class="col-8">
+            <input class="form-control" type="email" name="email" required>
+          </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-2 col-form-label">CEP</label>
+            <div class="col-4">
+                <input class="form-control" type="number" name="cep" required>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-2 col-form-label">Rua</label>
+            <div class="col-8">
+                <input class="form-control" type="text" name="rua" required>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-2 col-form-label">Nº</label>
+            <div class="col-2">
+                <input class="form-control" type="number" name="numero" required>
+            </div>
+            <label class="col-2 col-form-label" >Complemento</label>
+            <div class="col-4">
+                <input class="form-control" type="text" name="complemento" required>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-2 col-form-label">Cidade</label>
+            <div class="col-5">
+                <input class="form-control" type="text" name="cidade" required>
+            </div>
+            <label class="col-1 col-form-label">UF</label>
+            <div class="col-2">
+                <input class="form-control" type="text" name="estado" required>
+            </div>
+          <div class="form-group row">
+            <button class="btn btn-primary" type="submit"><b>Cadastrar</b></button>
+          </div>
+
+        </div>
+
+        </form>
+    </div>
+    <footer>
+      <div id="footer_copyright">
+        &#169
+        Ana Clara Quidute
+      </div>
+    </footer>
+  </body>
+</html>
